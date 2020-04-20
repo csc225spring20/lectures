@@ -1,4 +1,7 @@
-0011 0000 0000 0000
-0010 0000 0000 1111
-0001 0000 0010 0001
-0011 0000 0000 1101
+; Increments the value at location 0x3010.
+
+0011 0000 0000 0000   ; Start at location 0x3000.
+0010 000 000001111    ; Load the value at location 0x3010 into R0.
+0001 000 000 1 00001  ; Compute R0 = R0 + #1.
+0011 000 000001101    ; Store the value in R0 at location 0x3010.
+1111 0000 00100101    ; Halt.
