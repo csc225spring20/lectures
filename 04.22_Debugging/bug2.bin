@@ -8,4 +8,4 @@
 0000 111 111111100      ; ...loop back.
 0010 001 000000000      ; Restore R1.
 0000 0000 0000 0000     ; Space to save R1.
-1111 0000 00100101      ; BUG: Halt.
+1111 0000 00100101      ; BUG: Halt -- this is after the saved data, which the LC-3 will thus attempt to execute.
